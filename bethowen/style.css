@@ -1,0 +1,180 @@
+.page-top {
+    display: none;
+}
+
+.text-name {
+    font-weigh: 600;
+}
+
+.container-filter-top {
+    max-width: 1170px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: -5px;
+    position: relative;
+}
+
+.outer-container {
+    padding: 10px 0;
+}
+
+.outer-container.active {
+    padding: 10px 0;
+    background: #f5f5f5;
+}
+
+.outer-container:hover {
+    background: #f5f5f5;
+}
+
+.text-name {
+    margin-top: 10px;
+}
+
+.container-item {
+    /*flex-basis:*/
+    min-height: 85px;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.head-img > img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1170px;
+}
+
+.head-img {
+    position: relative;
+    top: -40px;
+}
+
+.container-filter-action {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    position: relative;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 15px;
+}
+
+.container-filter-action .items-block {
+    flex-basis: 25%;
+}
+
+.text-period {
+    padding: 5px 0 5px 15px;
+}
+
+.items-block {
+    padding: 10px 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.items-not-found {
+    margin: 0 auto;
+    font-size: 1.4em;
+    color: #ff4b4b;
+    padding: 40px 0;
+}
+
+.items-block:hover {
+    box-shadow: 0 0 7px #888;
+}
+
+.items-block > img {
+    margin: 0  auto;
+    display: block;
+    width: 100%;
+    max-width: 260px;
+}
+
+.sun-shine {
+    transform: skewX(-25deg);
+    height: 200px;
+    position: absolute;
+    width: 28px;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    left: -60px;
+    z-index: 2;
+}
+
+.no-decor {
+    text-decoration: none;
+    color: #555;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.items-block .no-decor > img {
+    margin: 0  auto;
+    display: block;
+    width: 100%;
+    max-width: 260px;
+}
+
+@media screen and (max-device-width: 550px) {
+    .outer-container {
+        flex-basis: 33% !important;
+    }
+    .container-filter-action .items-block {
+        flex-basis: 50%;
+        padding: 10px 5px;
+    }
+    .sun-shine {
+        height: 135px;
+    }
+    .container-filter-top {
+        width: 90%;
+    }
+
+    .slick-arrow {
+        border:none;
+        font-size:0;
+        position: absolute;
+        background: none;
+    }
+    .slick-prev {
+        top: calc(50% - 13px);
+        left: -18px;
+        height: 26px;
+        padding-top: 2px;
+    }
+    .slick-next {
+        top: calc(50% - 13px);
+        right: -18px;
+        height: 26px;
+        padding-top: 2px;
+    }
+    .slick-prev::before {
+        display: block;
+        width: 20px;
+        height: 26px;
+        content: url('/bitrix/templates/breeds-day/images/arrow-bd-slick.svg');
+    }
+    .slick-next::before {
+        display: block;
+        width: 20px;
+        height: 26px;
+        transform: scale(-1, 1);
+        content: url('/bitrix/templates/breeds-day/images/arrow-bd-slick.svg');
+    }
+}
